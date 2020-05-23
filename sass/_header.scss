@@ -1,0 +1,68 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 18%;
+    }
+    &-letter{
+        &-1{
+            transition: all .1s;
+            &:hover{
+                color: $color-primary;
+                font-size: 9.5rem;
+                line-height: 0;
+            }
+        }
+        &-2{
+            transition: all .1s;
+            &:hover{color: $color-secondary;font-size: 9.5rem;line-height: 0;}
+        }
+        &-3{
+            color: $color-primary;
+            transition: all .1s;
+            &:hover{
+                color: $color-secondary;
+                font-size: 10.5rem;
+                line-height: 0;}
+        }
+        &-4{
+            transition: all .1s;
+            color: $color-secondary;
+            &:hover{
+                color: $color-primary;
+                font-size: 9.5rem;
+                line-height: 0;
+            }
+        }
+    }
+    &-links{
+        margin-top: 3rem;
+        align-self: start;
+        margin-left: 18%;
+    }
+}
+
+#output{color: $color-secondary; font-size:3rem;}
+
+
+@keyframes letter-up{ 
+    0%{
+        font-size: 10rem;
+    }
+    40%{
+        font-size: 9.5rem;
+        color: $color-secondary;
+    }
+    100%{
+        font-size: 10rem;
+    }
+}

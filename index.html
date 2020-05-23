@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- <link rel="shortcut icon" type="image/png" href="./img/logo-2.png"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation-btn"><span class="navigation-icon">&nbsp;</span></label>
+        <div class="navigation-background">&nbsp;</div>
+        <nav class="navigation-nav">
+            <ul class="navigation-list">
+                <li class="navigation-item"> <a href="#header" class="navigation-link"><span>&lt;</span>Home<span>/&gt;</span></a></li>
+                <li class="navigation-item"> <a href="#works" class="navigation-link"><span>&lt;</span>Works<span>/&gt;</span></a></li>
+                <li class="navigation-item"> <a href="#cta" class="navigation-link"><span>&lt;</span>About<span>/&gt;</span></a></li>
+                <li class="navigation-item"> <a href="#story" class="navigation-link"><span>&lt;</span>Contact<span>/&gt;</span></a></li>
+                <li class="navigation-item"> <a href="#" class="navigation-link"><span>&lt;</span>Skills<span>/&gt;</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="resume">
+        <button class="btn btn-secondary">My Resume</button>
+    </div>
+    <div class="logo">
+        <a href="#" class="logo-link"><span>&lt;</span>SABA<span>/&gt;</span></a>
+    </div>
+    <div class="wrapper">
+        <video autoplay muted loop id="myVideo">
+            <source src="./img/sky.mp4" type="video/mp4">
+        </video>
+        <section class="section header" id="header">
+            <div class="header-text">
+                <h1 class="heading-1"><span class="header-letter-1">H</span><span class="header-letter-2">i</span><span class="header-letter-1">,</span><br>
+                    <span class="header-letter-1">I</span><span class="header-letter-2">'</span><span class="header-letter-1">m</span>
+                    <span class="header-letter-3">&lt;</span><span class="header-letter-4">S</span><span class="header-letter-2">a</span><span class="header-letter-1">b</span><span class="header-letter-2">a</span>
+                    <span class="header-letter-4"> M</span><span class="header-letter-2">o</span><span class="header-letter-1">k</span><span class="header-letter-2">h</span><span class="header-letter-1">l</span><span class="header-letter-2">e</span><span class="header-letter-1">s</span><span class="header-letter-2">i</span><span class="header-letter-3">/&gt;</span></h1>
+                <h2 id="output">A FrontEnd Developer</h2>
+            </div>
+            <div class="header-links">
+                <a href="#works" class="btn btn-primary">My Works &darr;</a>
+                <a href="#cta" class="btn btn-primary">My Skills &#8600;</a>
+                <a href="#gallery" class="btn btn-primary">Know Me better &rarr;</a>
+            </div>
+        </section>
+        <section class="section gallery" id="gallery">
+            <h1>gallery</h1>
+        </section>
+        <section class="section works" id="works">
+            <div class="works-box">
+                <div class="works-img-1">
+                    <img src="./img/work-1.jpeg" alt="work 1" class="works-img">
+
+                </div>
+                <div class="works-img-2">
+                    <img src="./img/work-2.jpeg" alt="work 2" class="works-img">
+                </div>
+                <div class="works-img-3">
+                    <img src="./img/work-3.jpeg" alt="work 3" class="works-img">
+                </div>
+                <div class="works-img-4">
+                    <img src="./img/work-4.jpeg" alt="work 4" class="works-img">
+                </div>
+                <div class="works-img-5">
+                    <img src="./img/work-5.jpeg" alt="work 5" class="works-img">
+                </div>
+            </div>
+        </section>
+        <section class="section cta" id="cta">
+            <h1>cta</h1>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./JavaScript/script.js"></script>
+</body>
+</html>

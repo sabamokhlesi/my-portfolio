@@ -1,0 +1,30 @@
+.works{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-box{
+        width: 73%;
+        display: grid;
+        column-gap: 5rem;
+        grid-template-columns:repeat(5,1fr);
+        grid-template-rows: repeat(10,8vh);
+        justify-items: start;
+        overflow: hidden;
+    }
+    &-img{
+        width: 100%;
+        height: auto;
+        justify-self: start;
+        &-1{grid-row:2/10;grid-column: 1/2;}
+        &-2{grid-row:4/11;grid-column: 2/3;}
+        &-5{grid-row:2/9;grid-column: 3/4;}
+        &-4{grid-row:3/10;grid-column: 4/5;}
+        &-3{grid-row:2/9;grid-column: 5/6;}
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Dream-Cafe",
+  "version": "1.0.0",
+  "description": "A fictional Cafe LANDING PAGE",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser=firefox"
+  },
+  "author": "Jonas",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "node-sass": "^4.14.0"
+  },
+  "dependencies": {}
+}
