@@ -95,13 +95,16 @@
         &::before{top: -1.3rem;}
     }
     &-btn:hover &-icon{
+        background-color: $color-primary;
     }
     &-btn:hover &-icon::before{
-        transform: translateX(0); 
+        transform: translateX(0);
+        background-color: $color-secondary;
 
     }
     &-btn:hover &-icon::after{ 
         transform: translateX(0);
+        background-color: $color-secondary;
     }
 
     &-checkbox:checked + &-btn &-icon{

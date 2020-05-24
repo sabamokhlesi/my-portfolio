@@ -22,7 +22,7 @@ $bp-smaller: 25em;
 
 // FONT VARIABLES
 $font-primary: 'Jost', sans-serif;
-$font-headers: 'Playfair Display', serif;
+$font-codes: 'Roboto Mono', monospace;
 $font-header: 'Righteous', cursive;
 
 //shadow variables
@@ -148,7 +148,7 @@ height: 100%;
         background-image: linear-gradient(135deg, transparent 0%, transparent 50%,white 50%);
         background-size: 500%;
         padding: 1rem 1.5rem;
-        border: 1px solid wheat;
+        border: 1px solid currentColor;
         border-radius: 5px;
         transition: all .8s ease-out;
         &:hover{
@@ -167,7 +167,13 @@ height: 100%;
             margin: 1rem auto;
             background-color: currentColor;
         }
-        &:hover{&::after{width: 0;}}
+        &:hover{
+            color: $color-secondary;
+            &::after{
+                width: 0; 
+                background-image: linear-gradient(to right,$color-primary,$color-secondary,$color-primary);
+            }
+        }
     }
 }
 
@@ -177,7 +183,7 @@ height: 100%;
       top: 0;
       left: 0;
       padding: 5rem;
-      z-index: 1000;
+      z-index: 999;
       font-size: 4rem;
       font-family: $font-header;
     &-link{

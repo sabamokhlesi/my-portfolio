@@ -4,4 +4,30 @@
     right: 0;
     width: 50%;
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code{
+    &-wrapper{
+        flex: 1;
+        padding: 3rem;
+    }
+    &-line{
+        padding-left: 7%;
+        margin-left: 7%;
+        font-family: $font-codes;
+        &:hover{
+            background-color: rgb(41, 41, 41);
+        }
+    }
+    &-dot{color: rgb(95, 94, 94);}
+    &-grey{color: rgb(151, 151, 151);}
+    &-red{color: red;}
+    &-orange{color: orange;}
+    &-blue{color: blueviolet;}
+    &-yellow{color: yellow;}
+    &-green{color: green;}
+    &-greenyellow{color: yellowgreen;}
 }

@@ -77,7 +77,7 @@ body {
     background-image: linear-gradient(135deg, transparent 0%, transparent 50%, white 50%);
     background-size: 500%;
     padding: 1rem 1.5rem;
-    border: 1px solid wheat;
+    border: 1px solid currentColor;
     border-radius: 5px;
     transition: all .8s ease-out; }
     .btn-primary:hover {
@@ -92,8 +92,11 @@ body {
     height: 3px;
     margin: 1rem auto;
     background-color: currentColor; }
-  .btn-secondary:hover::after {
-    width: 0; }
+  .btn-secondary:hover {
+    color: #c818df; }
+    .btn-secondary:hover::after {
+      width: 0;
+      background-image: linear-gradient(to right, #5918df, #c818df, #5918df); }
 
 .logo {
   color: #c818df;
@@ -101,7 +104,7 @@ body {
   top: 0;
   left: 0;
   padding: 5rem;
-  z-index: 1000;
+  z-index: 999;
   font-size: 4rem;
   font-family: "Righteous", cursive; }
   .logo-link {
@@ -311,7 +314,45 @@ body {
   bottom: 0;
   right: 0;
   width: 50%;
-  height: 50%; }
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.code-wrapper {
+  flex: 1;
+  padding: 3rem; }
+
+.code-line {
+  padding-left: 7%;
+  margin-left: 7%;
+  font-family: "Roboto Mono", monospace; }
+  .code-line:hover {
+    background-color: #292929; }
+
+.code-dot {
+  color: #5f5e5e; }
+
+.code-grey {
+  color: #979797; }
+
+.code-red {
+  color: red; }
+
+.code-orange {
+  color: orange; }
+
+.code-blue {
+  color: blueviolet; }
+
+.code-yellow {
+  color: yellow; }
+
+.code-green {
+  color: green; }
+
+.code-greenyellow {
+  color: yellowgreen; }
 
 .navigation-checkbox {
   display: none; }
@@ -398,11 +439,16 @@ body {
   .navigation-icon::before {
     top: -1.3rem; }
 
+.navigation-btn:hover .navigation-icon {
+  background-color: #5918df; }
+
 .navigation-btn:hover .navigation-icon::before {
-  transform: translateX(0); }
+  transform: translateX(0);
+  background-color: #c818df; }
 
 .navigation-btn:hover .navigation-icon::after {
-  transform: translateX(0); }
+  transform: translateX(0);
+  background-color: #c818df; }
 
 .navigation-checkbox:checked + .navigation-btn .navigation-icon {
   background-color: transparent; }
