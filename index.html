@@ -33,7 +33,7 @@
         <a href="#" class="logo-link"><span>&lt;</span>SABA<span>/&gt;</span></a>
     </div>
     <div class="wrapper">
-        <video autoplay muted loop id="myVideo">
+        <video autoplay muted loop id="myVideo" class="background-video">
             <source src="./img/sky.mp4" type="video/mp4">
         </video>
         <section class="section header" id="header">
@@ -45,7 +45,7 @@
                 <h2 id="output">A FrontEnd Developer</h2>
             </div>
             <div class="header-links">
-                <a href="#works" class="btn btn-primary">My Works &darr;</a>
+                <a href="#works" class="btn btn-primary">Selected Works &darr;</a>
                 <a href="#cta" class="btn btn-primary">My Skills &#8600;</a>
                 <a href="#gallery" class="btn btn-primary">Know Me better &rarr;</a>
             </div>
@@ -54,23 +54,54 @@
             <h1>gallery</h1>
         </section>
         <section class="section works" id="works">
-            <div class="works-box">
-                <div class="works-img-1">
-                    <img src="./img/work-1.jpeg" alt="work 1" class="works-img">
-
-                </div>
-                <div class="works-img-2">
-                    <img src="./img/work-2.jpeg" alt="work 2" class="works-img">
-                </div>
-                <div class="works-img-3">
-                    <img src="./img/work-3.jpeg" alt="work 3" class="works-img">
-                </div>
-                <div class="works-img-4">
-                    <img src="./img/work-4.jpeg" alt="work 4" class="works-img">
-                </div>
-                <div class="works-img-5">
-                    <img src="./img/work-5.jpeg" alt="work 5" class="works-img">
-                </div>
+            <div class="cards-container">
+                <div class="cardWrap cardWrap-1">
+                    <div class="card">
+                      <div class="cardBg" style="background-image: url('./img/work-1.jpeg');"></div>
+                      <div class="cardInfo">
+                        <h3 class="cardTitle">Foodies</h3>
+                        <p>A subject which deals with.... Well Maths!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardWrap cardWrap-2">
+                    <div class="card">
+                      <div class="cardBg" style="background-image: url('./img/work-5.jpeg');"></div>
+                      <div class="cardInfo">
+                        <h3 class="cardTitle">
+                          Web Company
+                        </h3>
+                        <p>A subject which deals with.... Well Maths!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardWrap cardWrap-3">
+                    <div class="card">
+                      <div class="cardBg" style="background-image: url('./img/work-3.jpeg');"></div>
+                      <div class="cardInfo">
+                        <h3 class="cardTitle">
+                            Dream Cafe
+                        </h3>
+                        <p>A subject which deals with.... Well Maths!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardWrap cardWrap-4">
+                    <div class="card">
+                      <div class="cardBg" style="background-image: url('./img/work-4.jpeg');"></div>
+                      <div class="cardInfo">
+                        <h3 class="cardTitle">
+                          E-Shop
+                        </h3>
+                        <p>A subject which deals with.... Well Maths!</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="works-links">
+                <a href="#" class="btn btn-primary">Home &darr;</a>
+                <a href="#cta" class="btn btn-primary">My Skills &#8600;</a>
+                <a href="#gallery" class="btn btn-primary">Know Me More&rarr;</a>
             </div>
         </section>
         <section class="section cta" id="cta">
