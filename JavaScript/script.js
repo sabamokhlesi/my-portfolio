@@ -21,10 +21,6 @@
 // FadeIn.forEach(item => observer.observe(item))
 
 
-
-
-
-
 textAnimate();
 
 function textAnimate(){
@@ -67,10 +63,9 @@ function textAnimate(){
       $("#output").html(fixed + block);
       block = "";
     }
-    window.setInterval(function () {
-        textAnimate();
-    }, 4000); // repeat forever, polling every 4 seconds
 }
+
+setInterval(textAnimate, 5000);
 
 
 const wrapper = document.querySelectorAll(".cardWrap");

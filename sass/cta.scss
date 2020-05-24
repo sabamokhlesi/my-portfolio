@@ -10,17 +10,28 @@
 }
 
 .code{
+    &-links{
+        writing-mode: vertical-lr;
+        margin-right: 4rem;
+    }
     &-wrapper{
         flex: 1;
         padding: 3rem;
+        margin-top: 5%;
     }
     &-line{
-        padding-left: 7%;
-        margin-left: 7%;
+        padding-left: 4%;
+        margin-left: 5%;
         font-family: $font-codes;
         &:hover{
             background-color: rgb(41, 41, 41);
         }
+    }
+    &-animation{
+        line-height: 0;
+        font-size: 2.2rem;
+        font-weight: bolder;
+        animation: type 1s infinite;
     }
     &-dot{color: rgb(95, 94, 94);}
     &-grey{color: rgb(151, 151, 151);}
@@ -30,4 +41,10 @@
     &-yellow{color: yellow;}
     &-green{color: green;}
     &-greenyellow{color: yellowgreen;}
+}
+
+@keyframes type{
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
 }

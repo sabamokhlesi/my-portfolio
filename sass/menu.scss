@@ -1,0 +1,73 @@
+.social{
+    position: fixed;
+    bottom: 4rem;
+    left: 4rem;
+    z-index: 999;
+    &-checkbox{display: none;}
+        &-btn{
+            height: 7rem;
+            width: 7rem;
+            position: fixed;
+            bottom: 4rem;
+            left: 4rem;
+            border-radius: 50%;
+            z-index: 1000;
+            cursor: pointer;
+        }
+    &-icon{
+    }
+    &-img{
+        background-color: black;
+        cursor: pointer;
+        position: fixed;
+        bottom: 4rem;
+        left: 5rem;
+        z-index: 999;
+    }
+    &-search{
+        height: 5rem;
+        width: 5rem;
+        transition: all .9s ease-in;
+        animation: pulse 1.5s infinite ease-in-out;
+    }
+    &-linkedin{
+        transition: all .7s ease-out; 
+        height: 1rem;
+        width: 1rem;
+        left: 6.5rem;
+    }
+    &-github{
+        transition: all .7s .1s ease-out;
+        height: 1rem;
+        width: 1rem;
+        left: 6.5rem;
+     }
+    &-checkbox:checked ~ &-linkedin{
+        transform: translateY(-10rem) rotate(720deg) scale(5);
+        filter: brightness(1.5); 
+    }
+    &-checkbox:checked ~ &-search{
+        animation:unset; 
+        filter: brightness(2);
+        transform:rotate(1440deg);
+    }
+    &-checkbox:checked ~ &-github{
+        transform: translateY(-17rem) rotate(1080deg) scale(5);
+        filter: brightness(1.5);  
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    50%{
+        transform: scale(1.05);
+        filter: brightness(1.5);
+    }
+    100%{
+        transform: scale(1);
+        filter: brightness(1);
+    }
+}

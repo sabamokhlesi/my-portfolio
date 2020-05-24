@@ -63,7 +63,8 @@ body {
   bottom: 0;
   left: 0;
   padding: 5rem;
-  z-index: 1000; }
+  z-index: 1000;
+  display: none; }
 
 .btn {
   background-color: transparent;
@@ -309,6 +310,66 @@ body {
   text-shadow: rgba(0, 0, 0, 0.747) 0 2rem 2rem;
   padding-bottom: 5rem; }
 
+.social {
+  position: fixed;
+  bottom: 4rem;
+  left: 4rem;
+  z-index: 999; }
+  .social-checkbox {
+    display: none; }
+  .social-btn {
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    bottom: 4rem;
+    left: 4rem;
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer; }
+  .social-img {
+    background-color: black;
+    cursor: pointer;
+    position: fixed;
+    bottom: 4rem;
+    left: 5rem;
+    z-index: 999; }
+  .social-search {
+    height: 5rem;
+    width: 5rem;
+    transition: all .9s ease-in;
+    animation: pulse 1.5s infinite ease-in-out; }
+  .social-linkedin {
+    transition: all .7s ease-out;
+    height: 1rem;
+    width: 1rem;
+    left: 6.5rem; }
+  .social-github {
+    transition: all .7s .1s ease-out;
+    height: 1rem;
+    width: 1rem;
+    left: 6.5rem; }
+  .social-checkbox:checked ~ .social-linkedin {
+    transform: translateY(-10rem) rotate(720deg) scale(5);
+    filter: brightness(1.5); }
+  .social-checkbox:checked ~ .social-search {
+    animation: unset;
+    filter: brightness(2);
+    transform: rotate(1440deg); }
+  .social-checkbox:checked ~ .social-github {
+    transform: translateY(-17rem) rotate(1080deg) scale(5);
+    filter: brightness(1.5); }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(1); }
+  50% {
+    transform: scale(1.05);
+    filter: brightness(1.5); }
+  100% {
+    transform: scale(1);
+    filter: brightness(1); } }
+
 .cta {
   position: absolute;
   bottom: 0;
@@ -319,16 +380,27 @@ body {
   justify-content: center;
   align-items: center; }
 
+.code-links {
+  writing-mode: vertical-lr;
+  margin-right: 4rem; }
+
 .code-wrapper {
   flex: 1;
-  padding: 3rem; }
+  padding: 3rem;
+  margin-top: 5%; }
 
 .code-line {
-  padding-left: 7%;
-  margin-left: 7%;
+  padding-left: 4%;
+  margin-left: 5%;
   font-family: "Roboto Mono", monospace; }
   .code-line:hover {
     background-color: #292929; }
+
+.code-animation {
+  line-height: 0;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  animation: type 1s infinite; }
 
 .code-dot {
   color: #5f5e5e; }
@@ -353,6 +425,14 @@ body {
 
 .code-greenyellow {
   color: yellowgreen; }
+
+@keyframes type {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .navigation-checkbox {
   display: none; }
