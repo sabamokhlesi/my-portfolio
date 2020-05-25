@@ -1,6 +1,6 @@
 .cta{
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
     width: 50%;
     height: 50%;
@@ -13,6 +13,7 @@
     &-links{
         writing-mode: vertical-lr;
         margin-right: 4rem;
+        padding-top: 8rem;
     }
     &-wrapper{
         flex: 1;

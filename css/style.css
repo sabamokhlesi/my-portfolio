@@ -33,7 +33,7 @@ body {
   font-family: "Righteous", cursive;
   letter-spacing: 4px;
   font-weight: 600;
-  font-size: 8.5rem; }
+  font-size: 10rem; }
 
 .wrapper {
   position: relative;
@@ -41,15 +41,6 @@ body {
   height: 200vh;
   background-color: black;
   color: blanchedalmond; }
-  .wrapper h1 {
-    font-size: 10rem; }
-
-.gallery {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 50%; }
 
 .background-video {
   position: fixed;
@@ -183,7 +174,8 @@ body {
   align-items: center; }
   .works-links {
     writing-mode: vertical-lr;
-    margin: 4rem; }
+    margin: 4rem;
+    padding-top: 8rem; }
 
 .cards-container {
   display: -webkit-box;
@@ -370,9 +362,65 @@ body {
     transform: scale(1);
     filter: brightness(1); } }
 
-.cta {
+.gallery {
   position: absolute;
   bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center; }
+
+.contact-wrapper {
+  flex: auto;
+  padding: 0 10rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto; }
+
+.contact-heading {
+  grid-column: 4/5;
+  font-size: 17rem;
+  line-height: 100%;
+  font-family: "Righteous", cursive; }
+  .contact-heading-1 {
+    color: #5918df; }
+  .contact-heading-2 {
+    color: #c818df; }
+
+.contact-form {
+  grid-column: 2/-1;
+  grid-row: 2/3; }
+
+.contact-lable {
+  line-height: 150%;
+  font-size: 2rem; }
+
+.contact-input {
+  color: inherit;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: none;
+  width: 45%;
+  padding: .5rem;
+  border-bottom: 1px solid #5918df; }
+  .contact-input:focus:invalid {
+    border-bottom: 2px solid orangered; }
+  .contact-input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(253, 252, 252, 0.199);
+    border-bottom: 2px solid #c818df; }
+
+.contact-submit {
+  min-width: 10%; }
+
+.contact-links {
+  writing-mode: vertical-lr;
+  margin-right: 4rem;
+  padding-top: 8rem; }
+
+.cta {
+  position: absolute;
+  top: 0;
   right: 0;
   width: 50%;
   height: 50%;
@@ -382,7 +430,8 @@ body {
 
 .code-links {
   writing-mode: vertical-lr;
-  margin-right: 4rem; }
+  margin-right: 4rem;
+  padding-top: 8rem; }
 
 .code-wrapper {
   flex: 1;

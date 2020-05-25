@@ -1,0 +1,58 @@
+.gallery{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;display: flex;
+    align-items: center;
+}
+.contact{
+    &-wrapper{
+        flex: auto;
+        padding: 0 10rem;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    &-heading{
+        grid-column: 4/5;
+        font-size: 17rem;
+        line-height: 100%;
+        font-family: $font-header;
+        &-1{color: $color-primary;}
+        &-2{color: $color-secondary;}
+    }
+    &-form{
+        grid-column: 2/-1;
+        grid-row: 2/3;
+
+    }
+    &-lable{
+        line-height: 150%;
+        font-size: 2rem;
+    }
+    &-input{
+        color: inherit;
+        font-size: 1.8rem;
+        background-color: transparent;
+        border: none;
+        width: 45%;
+        padding: .5rem;
+        border-bottom: 1px solid $color-primary;
+        &:focus:invalid{
+            border-bottom:2px solid orangered;
+        }
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(253, 252, 252, 0.199);
+            border-bottom: 2px solid $color-secondary
+        }
+    }
+    &-submit{
+        min-width:10% ;
+    }
+    &-links{
+        writing-mode: vertical-lr;
+        margin-right: 4rem;
+        padding-top: 8rem;
+    }
+}
