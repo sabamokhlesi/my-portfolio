@@ -13,10 +13,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
-  @media only screen and (max-width: 80em) {
+  @media only screen and (max-width: 63em) {
     html {
       font-size: 55%; } }
-  @media only screen and (max-width: 64em) {
+  @media only screen and (max-width: 53.5em) {
     html {
       font-size: 50%; } }
 
@@ -67,7 +67,7 @@ body {
   text-decoration: none; }
   .btn-primary {
     background-image: linear-gradient(135deg, transparent 0%, transparent 50%, white 50%);
-    background-size: 500%;
+    background-size: 550%;
     padding: 1rem 1.5rem;
     border: 1px solid currentColor;
     border-radius: 5px;
@@ -119,6 +119,11 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-left: 18%; }
+    @media only screen and (max-width: 40em) {
+      .header-text {
+        margin-left: 7%; }
+        .header-text h1 {
+          line-height: 130%; } }
   .header-letter-1 {
     transition: all .1s; }
     .header-letter-1:hover {
@@ -149,6 +154,9 @@ body {
     margin-top: 3rem;
     align-self: start;
     margin-left: 18%; }
+    @media only screen and (max-width: 40em) {
+      .header-links {
+        margin-left: 7%; } }
 
 #output {
   color: #c818df;
@@ -183,10 +191,13 @@ body {
   -webkit-box-pack: center;
   justify-content: space-evenly;
   flex: 1;
-  padding: 0 10rem; }
+  padding-left: 3rem; }
+  @media only screen and (max-width: 40em) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center; } }
 
 .cardWrap {
-  margin: auto 4rem;
   -webkit-transform: perspective(600px);
   transform: perspective(600px);
   -webkit-transform-style: preserve-3d;
@@ -195,12 +206,28 @@ body {
   cursor: pointer; }
   .cardWrap-1 {
     margin-top: 10rem; }
+    @media only screen and (max-width: 40em) {
+      .cardWrap-1 {
+        margin: 3rem;
+        margin-left: -6%; } }
   .cardWrap-2 {
     margin-top: 22rem; }
+    @media only screen and (max-width: 40em) {
+      .cardWrap-2 {
+        margin: 3rem;
+        margin-right: -10%; } }
   .cardWrap-3 {
     margin-top: 12rem; }
+    @media only screen and (max-width: 40em) {
+      .cardWrap-3 {
+        margin: 3rem;
+        margin-left: -10%; } }
   .cardWrap-4 {
     margin-top: 18rem; }
+    @media only screen and (max-width: 40em) {
+      .cardWrap-4 {
+        margin: 3rem;
+        margin-right: -8%; } }
 
 .cardWrap:hover .cardInfo {
   -webkit-transform: translateY(0);
@@ -244,6 +271,15 @@ body {
   -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transform-origin: center; }
+  @media only screen and (max-width: 53.5em) {
+    .card {
+      flex: 0 0 16rem;
+      width: 16rem; } }
+  @media only screen and (max-width: 40em) {
+    .card {
+      flex: 0 0 40rem;
+      width: 40rem;
+      min-height: 12rem; } }
 
 .cardBg {
   opacity: 0.5;
@@ -373,9 +409,9 @@ body {
 
 .contact-wrapper {
   flex: auto;
-  padding: 0 10rem;
   display: grid;
-  grid-template-columns: auto auto auto auto; }
+  grid-template-columns: auto auto auto auto;
+  gap: 3rem; }
 
 .contact-heading {
   grid-column: 4/5;
@@ -386,6 +422,10 @@ body {
     color: #5918df; }
   .contact-heading-2 {
     color: #c818df; }
+  @media only screen and (max-width: 40em) {
+    .contact-heading {
+      margin-left: -8%;
+      font-size: 15rem; } }
 
 .contact-form {
   grid-column: 2/-1;
@@ -402,7 +442,7 @@ body {
   border: none;
   width: 45%;
   padding: .5rem;
-  border-bottom: 1px solid #5918df; }
+  border-bottom: 2px solid #5918df; }
   .contact-input:focus:invalid {
     border-bottom: 2px solid orangered; }
   .contact-input:focus {
@@ -442,6 +482,9 @@ body {
   padding-left: 4%;
   margin-left: 5%;
   font-family: "Roboto Mono", monospace; }
+  @media only screen and (max-width: 40em) {
+    .code-line {
+      margin-left: 1%; } }
   .code-line:hover {
     background-color: #292929; }
 

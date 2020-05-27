@@ -24,6 +24,7 @@
         padding-left: 4%;
         margin-left: 5%;
         font-family: $font-codes;
+        @media only screen and (max-width:$bp-medium) {margin-left: 1%;}
         &:hover{
             background-color: rgb(41, 41, 41);
         }

@@ -3,15 +3,16 @@
     bottom: 0;
     right: 0;
     width: 50%;
-    height: 50%;display: flex;
+    height: 50%;
+    display: flex;
     align-items: center;
 }
 .contact{
     &-wrapper{
         flex: auto;
-        padding: 0 10rem;
         display: grid;
         grid-template-columns: auto auto auto auto;
+        gap: 3rem;
     }
     &-heading{
         grid-column: 4/5;
@@ -20,6 +21,7 @@
         font-family: $font-header;
         &-1{color: $color-primary;}
         &-2{color: $color-secondary;}
+        @media only screen and (max-width:$bp-medium) {margin-left: -8%; font-size: 15rem;}
     }
     &-form{
         grid-column: 2/-1;
@@ -37,7 +39,7 @@
         border: none;
         width: 45%;
         padding: .5rem;
-        border-bottom: 1px solid $color-primary;
+        border-bottom: 2px solid $color-primary;
         &:focus:invalid{
             border-bottom:2px solid orangered;
         }

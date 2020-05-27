@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: center;
         margin-left: 18%;
+        @media only screen and (max-width:$bp-medium) {margin-left: 7%; h1{line-height: 130%;}}
     }
     &-letter{
         &-1{
@@ -48,6 +49,7 @@
         margin-top: 3rem;
         align-self: start;
         margin-left: 18%;
+        @media only screen and (max-width:$bp-medium) {margin-left: 7%;}
     }
 }
 
