@@ -28,6 +28,9 @@ body {
   letter-spacing: 1px;
   line-height: 1.6;
   overflow: hidden; }
+  @media only screen and (max-width: 30em) {
+    body {
+      overflow: scroll; } }
 
 .heading-1 {
   font-family: "Righteous", cursive;
@@ -40,7 +43,13 @@ body {
   width: 200vw;
   height: 200vh;
   background-color: black;
-  color: blanchedalmond; }
+  color: blanchedalmond;
+  overflow: hidden; }
+  @media only screen and (max-width: 30em) {
+    .wrapper {
+      width: auto;
+      height: auto;
+      padding-bottom: 10rem; } }
 
 .background-video {
   position: fixed;
@@ -48,6 +57,10 @@ body {
   top: 0;
   width: 100%;
   height: 100%; }
+  @media only screen and (max-width: 30em) {
+    .background-video {
+      width: auto;
+      height: 100vh; } }
 
 .resume {
   position: fixed;
@@ -67,15 +80,19 @@ body {
   text-decoration: none; }
   .btn-primary {
     background-image: linear-gradient(135deg, transparent 0%, transparent 50%, white 50%);
-    background-size: 550%;
+    background-size: 500%;
     padding: 1rem 1.5rem;
     border: 1px solid currentColor;
     border-radius: 5px;
-    transition: all .8s ease-out; }
+    transition: all .8s ease-out;
+    margin-right: .5rem; }
+    @media only screen and (max-width: 40em) {
+      .btn-primary {
+        padding: 1rem;
+        background-size: 600%; } }
     .btn-primary:hover {
       background-position: 100%;
-      color: black;
-      transform: translateX(-1rem); }
+      color: black; }
   .btn-secondary::after {
     transition: all .5s ease-out;
     content: "";
@@ -99,6 +116,9 @@ body {
   z-index: 999;
   font-size: 4rem;
   font-family: "Righteous", cursive; }
+  @media only screen and (max-width: 30em) {
+    .logo {
+      padding: 3rem; } }
   .logo-link {
     text-decoration: none;
     color: inherit; }
@@ -114,6 +134,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media only screen and (max-width: 30em) {
+    .header {
+      position: relative;
+      width: auto;
+      min-height: 100vh;
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
   .header-text {
     display: flex;
     flex-direction: column;
@@ -124,18 +151,28 @@ body {
         margin-left: 7%; }
         .header-text h1 {
           line-height: 130%; } }
+    @media only screen and (max-width: 30em) {
+      .header-text h1 {
+        font-size: 7rem;
+        line-height: 150%; } }
   .header-letter-1 {
     transition: all .1s; }
     .header-letter-1:hover {
       color: #5918df;
       font-size: 9.5rem;
       line-height: 0; }
+      @media only screen and (max-width: 30em) {
+        .header-letter-1:hover {
+          font-size: 6.5rem; } }
   .header-letter-2 {
     transition: all .1s; }
     .header-letter-2:hover {
       color: #c818df;
       font-size: 9.5rem;
       line-height: 0; }
+      @media only screen and (max-width: 30em) {
+        .header-letter-2:hover {
+          font-size: 6.5rem; } }
   .header-letter-3 {
     color: #5918df;
     transition: all .1s; }
@@ -157,6 +194,9 @@ body {
     @media only screen and (max-width: 40em) {
       .header-links {
         margin-left: 7%; } }
+    @media only screen and (max-width: 30em) {
+      .header-links span {
+        display: none; } }
 
 #output {
   color: #c818df;
@@ -180,6 +220,13 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
+  @media only screen and (max-width: 30em) {
+    .works {
+      position: relative;
+      width: auto;
+      min-height: fit-content;
+      padding-top: 0rem;
+      padding-bottom: 15rem; } }
   .works-links {
     writing-mode: vertical-lr;
     margin: 4rem;
@@ -279,7 +326,11 @@ body {
     .card {
       flex: 0 0 40rem;
       width: 40rem;
-      min-height: 12rem; } }
+      min-height: 13rem; } }
+  @media only screen and (max-width: 30em) {
+    .card {
+      flex: 0 0 18rem;
+      width: 27rem; } }
 
 .cardBg {
   opacity: 0.5;
@@ -365,17 +416,20 @@ body {
     height: 5rem;
     width: 5rem;
     transition: all .9s ease-in;
-    animation: pulse 1.5s infinite ease-in-out; }
+    animation: pulse 1.5s infinite ease-in-out;
+    border-radius: 10px 20px 0 0; }
   .social-linkedin {
     transition: all .7s ease-out;
     height: 1rem;
     width: 1rem;
-    left: 6.5rem; }
+    left: 6.5rem;
+    border-radius: 50%; }
   .social-github {
     transition: all .7s .1s ease-out;
     height: 1rem;
     width: 1rem;
-    left: 6.5rem; }
+    left: 6.5rem;
+    border-radius: 50%; }
   .social-checkbox:checked ~ .social-linkedin {
     transform: translateY(-10rem) rotate(720deg) scale(5);
     filter: brightness(1.5); }
@@ -406,12 +460,24 @@ body {
   height: 50%;
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 30em) {
+    .gallery {
+      position: relative;
+      width: auto;
+      height: fit-content; } }
 
 .contact-wrapper {
   flex: auto;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 3rem; }
+  @media only screen and (max-width: 30em) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .contact-wrapper br {
+        display: none; } }
 
 .contact-heading {
   grid-column: 4/5;
@@ -426,10 +492,19 @@ body {
     .contact-heading {
       margin-left: -8%;
       font-size: 15rem; } }
+  @media only screen and (max-width: 30em) {
+    .contact-heading {
+      margin-left: 5%;
+      font-size: 10rem;
+      padding-bottom: 2rem; } }
 
 .contact-form {
   grid-column: 2/-1;
   grid-row: 2/3; }
+  @media only screen and (max-width: 30em) {
+    .contact-form {
+      margin-left: 3rem;
+      margin-right: 5rem; } }
 
 .contact-lable {
   line-height: 150%;
@@ -443,6 +518,11 @@ body {
   width: 45%;
   padding: .5rem;
   border-bottom: 2px solid #5918df; }
+  @media only screen and (max-width: 30em) {
+    .contact-input {
+      display: block;
+      width: 100%;
+      margin-bottom: 3rem; } }
   .contact-input:focus:invalid {
     border-bottom: 2px solid orangered; }
   .contact-input:focus {
@@ -452,6 +532,10 @@ body {
 
 .contact-submit {
   min-width: 10%; }
+  @media only screen and (max-width: 30em) {
+    .contact-submit {
+      float: right;
+      padding: 1rem 2rem; } }
 
 .contact-links {
   writing-mode: vertical-lr;
@@ -467,6 +551,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 30em) {
+    .cta {
+      position: relative;
+      width: auto;
+      min-height: 100vh;
+      padding-top: 0rem;
+      padding-bottom: 15rem; } }
 
 .code-links {
   writing-mode: vertical-lr;
@@ -477,11 +568,16 @@ body {
   flex: 1;
   padding: 3rem;
   margin-top: 5%; }
+  @media only screen and (max-width: 40em) {
+    .code-wrapper {
+      padding-right: 2rem; } }
 
 .code-line {
   padding-left: 4%;
   margin-left: 5%;
   font-family: "Roboto Mono", monospace; }
+  .code-line-0 {
+    font-size: 2.5rem; }
   @media only screen and (max-width: 40em) {
     .code-line {
       margin-left: 1%; } }

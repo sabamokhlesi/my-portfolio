@@ -59,6 +59,7 @@ body{
     letter-spacing: 1px;
     line-height: 1.6;
     overflow: hidden;
+    @media only screen and (max-width:$bp-small) {overflow: scroll;}
 }
 
 .heading-1{
@@ -108,7 +109,8 @@ body{
     height: 200vh;
     background-color: black;
     color: blanchedalmond;
-    // h1{font-size: 10rem;}
+    overflow: hidden;
+    @media only screen and (max-width:$bp-small) {width: auto; height: auto; padding-bottom: 10rem;}
 }
 
 .background-video {
@@ -117,6 +119,7 @@ left: 0;
 top: 0;
 width: 100%;
 height: 100%;
+@media only screen and (max-width:$bp-small) {width: auto; height:100vh;}
 }
 
 .resume{
@@ -138,15 +141,16 @@ height: 100%;
     text-decoration: none;
     &-primary{
         background-image: linear-gradient(135deg, transparent 0%, transparent 50%,white 50%);
-        background-size: 550%;
+        background-size: 500%;
         padding: 1rem 1.5rem;
         border: 1px solid currentColor;
         border-radius: 5px;
         transition: all .8s ease-out;
+        margin-right:.5rem ;
+        @media only screen and (max-width:$bp-medium) {padding: 1rem;background-size: 600%;}
         &:hover{
             background-position: 100%;
             color: black ;
-            transform: translateX(-1rem);
         }
     }
     &-secondary{
@@ -178,6 +182,7 @@ height: 100%;
       z-index: 999;
       font-size: 4rem;
       font-family: $font-header;
+      @media only screen and (max-width:$bp-small) {padding: 3rem;}
     &-link{
         text-decoration: none;
         color: inherit;

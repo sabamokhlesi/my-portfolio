@@ -6,6 +6,7 @@
     height: 50%;
     display: flex;
     align-items: center;
+    @media only screen and (max-width:$bp-small) {position: relative; width: auto; height: fit-content;}
 }
 .contact{
     &-wrapper{
@@ -13,6 +14,7 @@
         display: grid;
         grid-template-columns: auto auto auto auto;
         gap: 3rem;
+        @media only screen and (max-width:$bp-small) {display: flex; flex-direction: column; justify-content: center; br{display: none;}}
     }
     &-heading{
         grid-column: 4/5;
@@ -22,11 +24,12 @@
         &-1{color: $color-primary;}
         &-2{color: $color-secondary;}
         @media only screen and (max-width:$bp-medium) {margin-left: -8%; font-size: 15rem;}
+        @media only screen and (max-width:$bp-small) {margin-left: 5%; font-size: 10rem; padding-bottom: 2rem;}
     }
     &-form{
         grid-column: 2/-1;
         grid-row: 2/3;
-
+        @media only screen and (max-width:$bp-small) {margin-left: 3rem; margin-right: 5rem;}
     }
     &-lable{
         line-height: 150%;
@@ -40,6 +43,7 @@
         width: 45%;
         padding: .5rem;
         border-bottom: 2px solid $color-primary;
+        @media only screen and (max-width:$bp-small) {display: block; width: 100%; margin-bottom: 3rem;}
         &:focus:invalid{
             border-bottom:2px solid orangered;
         }
@@ -51,6 +55,7 @@
     }
     &-submit{
         min-width:10% ;
+        @media only screen and (max-width:$bp-small) {float: right; padding: 1rem 2rem;;}
     }
     &-links{
         writing-mode: vertical-lr;

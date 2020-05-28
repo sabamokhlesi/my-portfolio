@@ -29,18 +29,21 @@
         width: 5rem;
         transition: all .9s ease-in;
         animation: pulse 1.5s infinite ease-in-out;
+        border-radius: 10px 20px 0 0;
     }
     &-linkedin{
         transition: all .7s ease-out; 
         height: 1rem;
         width: 1rem;
         left: 6.5rem;
+        border-radius: 50%;
     }
     &-github{
         transition: all .7s .1s ease-out;
         height: 1rem;
         width: 1rem;
         left: 6.5rem;
+        border-radius: 50%;
      }
     &-checkbox:checked ~ &-linkedin{
         transform: translateY(-10rem) rotate(720deg) scale(5);

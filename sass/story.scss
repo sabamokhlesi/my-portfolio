@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items:center;
+    @media only screen and (max-width:$bp-small) {position: relative; width: auto; min-height: fit-content; padding-top: 0rem; padding-bottom: 15rem;}
     &-links{
         writing-mode: vertical-lr;
         margin: 4rem;
@@ -94,7 +95,8 @@
     -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     transform-origin: center;
-    @media only screen and (max-width:$bp-medium) {flex: 0 0 40rem; width: 40rem; min-height: 12rem;}
+    @media only screen and (max-width:$bp-medium) {flex: 0 0 40rem; width: 40rem; min-height: 13rem;}
+    @media only screen and (max-width:$bp-small) {flex: 0 0 18rem; width: 27rem;}
   }
   .cardBg {
     opacity: 0.5;

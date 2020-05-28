@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width:$bp-small) {position: relative; width: auto; min-height: 100vh; padding-top: 0rem; padding-bottom: 15rem;}
 }
 
 .code{
@@ -19,11 +20,13 @@
         flex: 1;
         padding: 3rem;
         margin-top: 5%;
+        @media only screen and (max-width:$bp-medium) {padding-right: 2rem;}
     }
     &-line{
         padding-left: 4%;
         margin-left: 5%;
         font-family: $font-codes;
+        &-0{ font-size: 2.5rem;}
         @media only screen and (max-width:$bp-medium) {margin-left: 1%;}
         &:hover{
             background-color: rgb(41, 41, 41);
