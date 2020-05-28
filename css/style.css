@@ -125,9 +125,12 @@ body {
   z-index: 999;
   font-size: 4rem;
   font-family: "Righteous", cursive; }
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 56.5em) {
     .logo {
-      padding: 3rem; } }
+      padding: 0rem;
+      margin: 3rem;
+      background-color: black;
+      border-radius: 200px; } }
   .logo-link {
     text-decoration: none;
     color: inherit; }
@@ -242,7 +245,8 @@ body {
     margin: 4rem;
     padding-top: 8rem;
     margin-top: auto;
-    margin-bottom: auto; }
+    margin-bottom: auto;
+    height: max-content; }
 
 .works-box {
   flex: 1;
@@ -398,6 +402,10 @@ body {
   bottom: 4rem;
   left: 4rem;
   z-index: 999; }
+  @media only screen and (max-width: 56.5em) {
+    .social {
+      bottom: 2rem;
+      left: 2rem; } }
   .social-checkbox {
     display: none; }
   .social-btn {
@@ -409,6 +417,10 @@ body {
     border-radius: 50%;
     z-index: 1000;
     cursor: pointer; }
+    @media only screen and (max-width: 56.5em) {
+      .social-btn {
+        bottom: 2rem;
+        left: 2rem; } }
   .social-img {
     background-color: black;
     cursor: pointer;
@@ -416,6 +428,10 @@ body {
     bottom: 4rem;
     left: 5rem;
     z-index: 999; }
+    @media only screen and (max-width: 56.5em) {
+      .social-img {
+        bottom: 2rem;
+        left: 2.5rem; } }
   .social-search {
     height: 5rem;
     width: 5rem;
@@ -428,12 +444,18 @@ body {
     width: 1rem;
     left: 6.5rem;
     border-radius: 50%; }
+    @media only screen and (max-width: 56.5em) {
+      .social-linkedin {
+        left: 4rem; } }
   .social-github {
     transition: all .7s .1s ease-out;
     height: 1rem;
     width: 1rem;
     left: 6.5rem;
     border-radius: 50%; }
+    @media only screen and (max-width: 56.5em) {
+      .social-github {
+        left: 4rem; } }
   .social-checkbox:checked ~ .social-linkedin {
     transform: translateY(-10rem) rotate(720deg) scale(5);
     filter: brightness(1.5); }
@@ -529,7 +551,7 @@ body {
     .contact-input {
       display: block;
       width: 100%;
-      margin-bottom: 3rem; } }
+      margin-bottom: 2.5rem; } }
   .contact-input:focus:invalid {
     border-bottom: 2px solid orangered; }
   .contact-input:focus {
@@ -547,7 +569,8 @@ body {
 .contact-links {
   writing-mode: vertical-lr;
   margin-right: 4rem;
-  padding-top: 8rem; }
+  padding-top: 8rem;
+  height: max-content; }
 
 .cta {
   position: absolute;
@@ -572,7 +595,8 @@ body {
 .code-links {
   writing-mode: vertical-lr;
   margin-right: 4rem;
-  padding-top: 8rem; }
+  padding-top: 8rem;
+  height: max-content; }
 
 .code-wrapper {
   flex: 1;

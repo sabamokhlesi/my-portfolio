@@ -3,6 +3,7 @@
     bottom: 4rem;
     left: 4rem;
     z-index: 999;
+    @media only screen and (max-width:$bp-large) {bottom: 2rem; left: 2rem;}
     &-checkbox{display: none;}
         &-btn{
             height: 7rem;
@@ -13,6 +14,7 @@
             border-radius: 50%;
             z-index: 1000;
             cursor: pointer;
+            @media only screen and (max-width:$bp-large) {bottom: 2rem; left: 2rem;}
         }
     &-icon{
     }
@@ -23,6 +25,7 @@
         bottom: 4rem;
         left: 5rem;
         z-index: 999;
+        @media only screen and (max-width:$bp-large) {bottom: 2rem; left: 2.5rem;}
     }
     &-search{
         height: 5rem;
@@ -37,6 +40,7 @@
         width: 1rem;
         left: 6.5rem;
         border-radius: 50%;
+        @media only screen and (max-width:$bp-large) {left: 4rem;}
     }
     &-github{
         transition: all .7s .1s ease-out;
@@ -44,6 +48,7 @@
         width: 1rem;
         left: 6.5rem;
         border-radius: 50%;
+        @media only screen and (max-width:$bp-large) {left: 4rem;}
      }
     &-checkbox:checked ~ &-linkedin{
         transform: translateY(-10rem) rotate(720deg) scale(5);

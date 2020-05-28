@@ -44,7 +44,7 @@
         width: 45%;
         padding: .5rem;
         border-bottom: 2px solid $color-primary;
-        @media only screen and (max-width:$bp-small) {display: block; width: 100%; margin-bottom: 3rem;}
+        @media only screen and (max-width:$bp-small) {display: block; width: 100%; margin-bottom: 2.5rem;}
         &:focus:invalid{
             border-bottom:2px solid orangered;
         }
@@ -62,5 +62,6 @@
         writing-mode: vertical-lr;
         margin-right: 4rem;
         padding-top: 8rem;
+        height: max-content;
     }
 }
