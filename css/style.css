@@ -49,7 +49,7 @@ body {
     .wrapper {
       width: auto;
       height: auto;
-      padding-bottom: 10rem; } }
+      padding-bottom: 4rem; } }
 
 .background-video {
   position: fixed;
@@ -499,7 +499,7 @@ body {
     .contact-heading {
       margin-left: 5%;
       font-size: 10rem;
-      padding-bottom: 2rem; } }
+      padding-bottom: 1rem; } }
 
 .contact-form {
   grid-column: 2/-1;

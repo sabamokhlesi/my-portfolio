@@ -24,7 +24,7 @@
         &-1{color: $color-primary;}
         &-2{color: $color-secondary;}
         @media only screen and (max-width:$bp-medium) {margin-left: -8%; font-size: 15rem;}
-        @media only screen and (max-width:$bp-small) {margin-left: 5%; font-size: 10rem; padding-bottom: 2rem;}
+        @media only screen and (max-width:$bp-small) {margin-left: 5%; font-size: 10rem; padding-bottom: 1rem;}
     }
     &-form{
         grid-column: 2/-1;
