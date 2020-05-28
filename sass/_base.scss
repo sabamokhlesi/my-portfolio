@@ -110,7 +110,7 @@ body{
     color: blanchedalmond;
     overflow: hidden;
     @media only screen and (max-width:$bp-large) {width: auto; height: auto; padding-bottom: 3rem; padding-top: 8rem;}
-    @media only screen and (max-width:$bp-large) {padding-top: 3rem;}
+    @media only screen and (max-width:$bp-large) {padding-top: 3rem; padding-bottom: 0;}
 }
 
 .background-video {

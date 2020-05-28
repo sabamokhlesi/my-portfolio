@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     @media only screen and (max-width:$bp-large) {position: relative; width: auto; min-height: 100vh; padding-top: 10rem; padding-bottom: 20rem;}
-    
+    @media only screen and (max-width:$bp-medium) {padding-top: 5rem;}
 }
 
 .code{
