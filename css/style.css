@@ -51,6 +51,9 @@ body {
       height: auto;
       padding-bottom: 3rem;
       padding-top: 8rem; } }
+  @media only screen and (max-width: 56.5em) {
+    .wrapper {
+      padding-top: 3rem; } }
 
 .background-video {
   position: fixed;
