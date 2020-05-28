@@ -85,11 +85,15 @@ body {
     border: 1px solid currentColor;
     border-radius: 5px;
     transition: all .8s ease-out;
-    margin-right: .5rem; }
+    margin-right: .5rem;
+    margin-top: .5rem; }
     @media only screen and (max-width: 40em) {
       .btn-primary {
         padding: 1rem;
         background-size: 600%; } }
+    @media only screen and (max-width: 30em) {
+      .btn-primary span {
+        display: none; } }
     .btn-primary:hover {
       background-position: 100%;
       color: black; }
@@ -557,7 +561,7 @@ body {
       width: auto;
       min-height: 100vh;
       padding-top: 0rem;
-      padding-bottom: 15rem; } }
+      padding-bottom: 18rem; } }
 
 .code-links {
   writing-mode: vertical-lr;
@@ -582,7 +586,7 @@ body {
     .code-line {
       margin-left: 1%; } }
   .code-line:hover {
-    background-color: #292929; }
+    background-color: rgba(41, 41, 41, 0.637); }
 
 .code-animation {
   line-height: 0;
