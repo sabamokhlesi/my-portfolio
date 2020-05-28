@@ -6,7 +6,7 @@
     height: 50%;
     display: flex;
     align-items: center;
-    @media only screen and (max-width:$bp-small) {position: relative; width: auto; height: fit-content;}
+    @media only screen and (max-width:$bp-large) {position: relative; width: auto; height: fit-content;}
 }
 .contact{
     &-wrapper{
@@ -14,6 +14,7 @@
         display: grid;
         grid-template-columns: auto auto auto auto;
         gap: 3rem;
+        @media only screen and (max-width:$bp-large) {padding-bottom: 5rem;}
         @media only screen and (max-width:$bp-small) {display: flex; flex-direction: column; justify-content: center; br{display: none;}}
     }
     &-heading{
@@ -55,7 +56,7 @@
     }
     &-submit{
         min-width:10% ;
-        @media only screen and (max-width:$bp-small) {float: right; padding: 1rem 2rem;;}
+        @media only screen and (max-width:$bp-small) {float: right; padding: 1rem 2rem;}
     }
     &-links{
         writing-mode: vertical-lr;

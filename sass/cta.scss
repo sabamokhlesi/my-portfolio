@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media only screen and (max-width:$bp-small) {position: relative; width: auto; min-height: 100vh; padding-top: 0rem; padding-bottom: 25rem;}
+    @media only screen and (max-width:$bp-large) {position: relative; width: auto; min-height: 100vh; padding-top: 10rem; padding-bottom: 20rem;}
 }
 
 .code{
