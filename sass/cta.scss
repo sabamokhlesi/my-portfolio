@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     @media only screen and (max-width:$bp-large) {position: relative; width: auto; min-height: 100vh; padding-top: 10rem; padding-bottom: 20rem;}
+    
 }
 
 .code{
@@ -21,6 +22,10 @@
         padding: 3rem;
         margin-top: 5%;
         @media only screen and (max-width:$bp-medium) {padding-right: 2rem;}
+        @media only screen and (max-width:$bp-small) {width: max-content; overflow: auto; white-space: nowrap; margin-right: 3rem;}
+    }
+    &-lines{
+        
     }
     &-line{
         padding-left: 4%;

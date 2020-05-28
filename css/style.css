@@ -571,6 +571,12 @@ body {
   @media only screen and (max-width: 40em) {
     .code-wrapper {
       padding-right: 2rem; } }
+  @media only screen and (max-width: 30em) {
+    .code-wrapper {
+      width: max-content;
+      overflow: auto;
+      white-space: nowrap;
+      margin-right: 3rem; } }
 
 .code-line {
   padding-left: 4%;
