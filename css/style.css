@@ -143,7 +143,6 @@ body {
       position: relative;
       width: auto;
       min-height: 100vh;
-      padding-top: 6rem;
       padding-bottom: 6rem; } }
   .header-text {
     display: flex;
