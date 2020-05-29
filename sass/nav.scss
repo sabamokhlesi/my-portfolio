@@ -35,7 +35,7 @@
         transition: all .5s;
         pointer-events: none;
         cursor: not-allowed;
-        @media only screen and (max-width:$bp-medium) {top: 43%;}
+        @media only screen and (max-width:$bp-medium) {top: 46%;}
     }
     &-list{
         list-style: none;
@@ -64,6 +64,7 @@
 
     &-checkbox:checked ~ &-background{
         height: 33%;
+        @media only screen and (max-width:$bp-medium) {height: 56%;}
     }
     &-checkbox:checked ~ &-nav{
         opacity: 1;
