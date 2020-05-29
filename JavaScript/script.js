@@ -6,7 +6,7 @@ const FadeIn = document.querySelectorAll('.fade-in')
 const options = {
     root:null,
     threshold:0,
-    rootMargin:"-250px 0px -250px 0px",
+    rootMargin:"-300px -100px -250px -100px",
 }
 const observer = new IntersectionObserver(function(entries,observer){
     entries.forEach(entry =>{
@@ -413,4 +413,9 @@ $(".card").tilt({
 glare: true,
 maxGlare: .2,
 maxTilt: 5
+});
+
+//loader
+$(window).on('load',function(){
+    $('.loader-background').fadeOut("slow");
 });
