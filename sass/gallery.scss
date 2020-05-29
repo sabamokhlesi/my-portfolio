@@ -14,8 +14,8 @@
         display: grid;
         grid-template-columns: auto auto auto auto;
         gap: 3rem;
-        @media only screen and (max-width:$bp-large) {padding-bottom: 5rem;}
-        @media only screen and (max-width:$bp-small) {display: flex; flex-direction: column; justify-content: center; br{display: none;}}
+        @media only screen and (max-width:$bp-large) {padding-bottom: 15rem;}
+        @media only screen and (max-width:$bp-small) {padding-bottom: 5rem; display: flex; flex-direction: column; justify-content: center; br{display: none;}}
     }
     &-heading{
         grid-column: 4/5;

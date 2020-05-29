@@ -499,9 +499,10 @@ body {
   gap: 3rem; }
   @media only screen and (max-width: 56.5em) {
     .contact-wrapper {
-      padding-bottom: 5rem; } }
+      padding-bottom: 15rem; } }
   @media only screen and (max-width: 30em) {
     .contact-wrapper {
+      padding-bottom: 5rem;
       display: flex;
       flex-direction: column;
       justify-content: center; }
@@ -687,9 +688,9 @@ body {
 
 .navigation-nav {
   height: 0;
-  width: 50%;
+  min-width: 50%;
   position: fixed;
-  top: 32%;
+  top: 36%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1500;
@@ -707,13 +708,15 @@ body {
 .navigation-link:link, .navigation-link:visited {
   text-decoration: none;
   transition: all .5s;
-  padding: 1.5rem;
   font-size: 2rem;
   color: black;
   font-weight: bolder;
   text-transform: uppercase; }
   .navigation-link:link span, .navigation-link:visited span {
     color: #5918df; }
+  @media only screen and (max-width: 40em) {
+    .navigation-link:link, .navigation-link:visited {
+      font-size: 1.6rem; } }
 
 .navigation-link:hover, .navigation-link:active {
   color: #5918df;

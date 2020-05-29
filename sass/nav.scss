@@ -24,9 +24,9 @@
 
     &-nav{
         height: 0;
-        width: 50%;
+        min-width: 50%;
         position: fixed;
-        top: 32%;
+        top: 36%;
         left: 50%;
         transform: translate(-50% , -50%);
         z-index: 1500;
@@ -40,18 +40,21 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
+        // @media only screen and (max-width:$bp-medium) {flex-direction: column;}
     }
     &-link{
         &:link,
         &:visited{
             text-decoration: none;
             transition: all .5s;
-            padding: 1.5rem;
+            // padding: .5rem;
             font-size: 2rem;
             color: black;
             font-weight: bolder;
             text-transform: uppercase;
             span{color: $color-primary;}
+        @media only screen and (max-width:$bp-medium) {font-size: 1.6rem;}
+
         }
         &:hover,
         &:active{
