@@ -35,7 +35,7 @@
         transition: all .5s;
         pointer-events: none;
         cursor: not-allowed;
-        @media only screen and (max-width:$bp-medium) {top: 46%;}
+        @media only screen and (max-width:$bp-medium) {top: 42%;}
     }
     &-list{
         list-style: none;

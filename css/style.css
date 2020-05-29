@@ -701,7 +701,7 @@ body {
   cursor: not-allowed; }
   @media only screen and (max-width: 40em) {
     .navigation-nav {
-      top: 46%; } }
+      top: 42%; } }
 
 .navigation-list {
   list-style: none;
