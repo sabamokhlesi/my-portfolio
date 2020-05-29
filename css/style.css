@@ -591,7 +591,7 @@ body {
       padding-bottom: 20rem; } }
   @media only screen and (max-width: 40em) {
     .cta {
-      padding-top: 5rem; } }
+      padding-top: 2rem; } }
 
 .code-links {
   writing-mode: vertical-lr;
@@ -699,6 +699,9 @@ body {
   transition: all .5s;
   pointer-events: none;
   cursor: not-allowed; }
+  @media only screen and (max-width: 40em) {
+    .navigation-nav {
+      top: 43%; } }
 
 .navigation-list {
   list-style: none;
