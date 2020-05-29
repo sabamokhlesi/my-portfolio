@@ -60,16 +60,11 @@
         align-self: start;
         margin-left: 18%;
         @media only screen and (max-width:$bp-medium) {margin-left: 7%;}
-        @media only screen and (max-width:$bp-small) {
-            // display: flex; 
-            // flex-direction: column;
-            span{display: none;}
-        }
+        @media only screen and (max-width:$bp-small) {span{display: none;}}
     }
 }
 
 #output{color: $color-secondary; font-size:3rem;}
-
 
 @keyframes letter-up{ 
     0%{

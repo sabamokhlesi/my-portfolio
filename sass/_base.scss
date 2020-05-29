@@ -4,7 +4,7 @@ $color-primary-light: #7b45e9;
 $color-primary-dark: #310e79;
 
 $color-secondary: #c818df;
-$color-secondary-dark: #665a45;
+$color-secondary-dark: #740283;
 $color-secondary-light: #d5b2da;
 
 $color-grey-light-1: #dadfe2;
@@ -24,11 +24,6 @@ $font-primary: 'Jost', sans-serif;
 $font-codes: 'Roboto Mono', monospace;
 $font-header: 'Righteous', cursive;
 
-//shadow variables
-$shadow-light: 0 1rem 4rem rgba(90, 90, 90, 0.295);
-$shadow-lighter: 0 1rem 4rem rgba(255, 255, 255, 0.116);
-$shadow-dark:0 1rem 4rem rgba(255, 255, 255, 0.349);
-
 *,
 *::before,
 *::after{
@@ -36,11 +31,6 @@ $shadow-dark:0 1rem 4rem rgba(255, 255, 255, 0.349);
     padding: 0;
     box-sizing: initial;
 }
-
-::selection {
-    color: white;
-    background: $color-secondary;
-  }   
 
 html{
     box-sizing: border-box;
@@ -61,47 +51,17 @@ body{
     @media only screen and (max-width:$bp-large) {overflow: scroll;}
 }
 
+::selection {
+    color: white;
+    background: $color-secondary;
+  }
+
 .heading-1{
     font-family: $font-header;
     letter-spacing: 4px;
     font-weight: 600;
     font-size: 10rem;
 }
-// .heading-2{
-//     font-family: $font-headers;
-//     color: $color-primary;
-//     font-weight:600;
-//     letter-spacing: 2px;
-//     font-size: 4.5rem;
-//     padding-bottom: 3rem;
-//     @media only screen and (max-width:$bp-medium) {font-size: 3.5rem;}
-// }
-// .heading-3{
-//     font-weight: 700;
-//     font-size: 1.8;
-//     letter-spacing: 1px;
-//     color: $color-secondary-light;
-//     margin-bottom: 2rem;
-//     @media only screen and (max-width:$bp-medium) {font-size: 1.8rem;}
-// }
-// .heading-4{
-//     padding: 1rem 0;
-//     font-size: 1.8rem;
-//     color: $color-grey-light-2;
-//     background-color: #170128;
-// }
-
-// p{
-//     font-size: 1.5;
-//     color: $color-grey-light-2;
-// }
-// .heading-5{
-//     letter-spacing: 1px;
-//     padding: 1rem 0;
-//     font-size: 1.6rem;
-//     // @media only screen and (max-width:$bp-medium) {font-size: 1.6rem;}
-// }
-
 .wrapper{
     position: relative;
     width: 200vw;
@@ -120,15 +80,6 @@ top: 0;
 width: 100%;
 height: 100%;
 @media only screen and (max-width:$bp-large) {width: auto; height:100vh;}
-}
-
-.resume{
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      padding: 5rem;
-      z-index: 1000;
-      display: none;
 }
 
 .btn{

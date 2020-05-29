@@ -10,7 +10,7 @@
 @keyframes moveInRight {
     0%{
         opacity: 0;
-        transform: translateX(5rem);
+        transform: translateX(10rem);
     }
     100%{
         opacity: 1;
@@ -30,7 +30,27 @@
 @keyframes moveInUp {
     0%{
         opacity: 1;
-        transform: translateY(7rem);
+        transform: translateY(12rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+//move down
+.move-in-down{
+    opacity: 0;
+}
+
+.move-in-down.add-animation{
+    animation: moveInDown 1s ease-out;
+    opacity: 1;
+}
+@keyframes moveInDown {
+    0%{
+        opacity: 1;
+        transform: translateY(-12rem);
     }
     100%{
         opacity: 1;
@@ -50,7 +70,7 @@
 @keyframes moveInLeft {
     0%{
         opacity: 0;
-        transform: translateX(-5rem);
+        transform: translateX(-10rem);
     }
     100%{
         opacity: 1;

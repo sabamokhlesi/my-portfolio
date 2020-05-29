@@ -6,7 +6,6 @@
     height: 50%;
     display: flex;
     justify-content: space-between;
-    // align-items:center;
     @media only screen and (max-width:$bp-large) {position: relative; width: auto; min-height: fit-content; padding-top: 10rem; padding-bottom: 10rem;}
     @media only screen and (max-width:$bp-medium) {padding-top: 5rem;}
     &-links{
@@ -33,9 +32,6 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-// Styling
-// =================================
 
 $letters: 7;
 $teal: #16e590;
@@ -98,21 +94,6 @@ $cubic-slow: cubic-bezier(0.7, 0.01, 0.37, 1);
     }
   }
 }
-.play-button {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  transition: 0.5s;
-  svg {
-    overflow: visible;
-  }
-  .polygon {
-    fill: $teal;
-    transition: transform 0.5s, fill 0.5s;
-    transition-timing-function: $cubic-slow;
-    transform-origin: 50% 50%;
-  }
-}
 .card {
   text-decoration: none;
   color: inherit;
@@ -160,16 +141,7 @@ $cubic-slow: cubic-bezier(0.7, 0.01, 0.37, 1);
     }
   }
   &:hover {
-    // play button spin
     box-shadow: 0 0rem 5rem rgba(255, 255, 255, 0.219);
-    // .play-button {
-    //   transform: scale(1.1);
-    //   .polygon {
-    //     transform: translateZ(0px) rotate(90deg);
-    //     fill: #67fbbe;
-    //   }
-    // }
-    // text roll
     .roll-up {
       > span {
         > span {
@@ -182,7 +154,6 @@ $cubic-slow: cubic-bezier(0.7, 0.01, 0.37, 1);
         }
       }
     }
-    // paragraph reveal
     .text-reveal {
       > span:nth-child(2) > span,
       > span:nth-child(2) > span > span {

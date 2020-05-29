@@ -5,10 +5,6 @@
   padding: 0;
   box-sizing: initial; }
 
-::selection {
-  color: white;
-  background: #c818df; }
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -31,6 +27,10 @@ body {
   @media only screen and (max-width: 56.5em) {
     body {
       overflow: scroll; } }
+
+::selection {
+  color: white;
+  background: #c818df; }
 
 .heading-1 {
   font-family: "Righteous", cursive;
@@ -66,14 +66,6 @@ body {
     .background-video {
       width: auto;
       height: 100vh; } }
-
-.resume {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding: 5rem;
-  z-index: 1000;
-  display: none; }
 
 .btn {
   background-color: transparent;
@@ -327,19 +319,6 @@ body {
         transform: translateX(100%);
         transition-delay: inherit; }
 
-.play-button {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  transition: 0.5s; }
-  .play-button svg {
-    overflow: visible; }
-  .play-button .polygon {
-    fill: #16e590;
-    transition: transform 0.5s, fill 0.5s;
-    transition-timing-function: cubic-bezier(0.7, 0.01, 0.37, 1);
-    transform-origin: 50% 50%; }
-
 .card {
   text-decoration: none;
   color: inherit;
@@ -492,7 +471,7 @@ body {
     transform: scale(1);
     filter: brightness(1); } }
 
-.gallery {
+.contact {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -501,7 +480,7 @@ body {
   display: flex;
   align-items: center; }
   @media only screen and (max-width: 56.5em) {
-    .gallery {
+    .contact {
       position: relative;
       width: auto;
       height: fit-content; } }
@@ -587,7 +566,7 @@ body {
   padding-top: 8rem;
   height: max-content; }
 
-.cta {
+.resume {
   position: absolute;
   top: 0;
   right: 0;
@@ -597,14 +576,14 @@ body {
   justify-content: center;
   align-items: center; }
   @media only screen and (max-width: 56.5em) {
-    .cta {
+    .resume {
       position: relative;
       width: auto;
       min-height: 100vh;
       padding-top: 10rem;
       padding-bottom: 20rem; } }
   @media only screen and (max-width: 40em) {
-    .cta {
+    .resume {
       padding-top: 0; } }
 
 .code-links {
@@ -802,7 +781,7 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(5rem); }
+    transform: translateX(10rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -817,7 +796,22 @@ body {
 @keyframes moveInUp {
   0% {
     opacity: 1;
-    transform: translateY(7rem); }
+    transform: translateY(12rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.move-in-down {
+  opacity: 0; }
+
+.move-in-down.add-animation {
+  animation: moveInDown 1s ease-out;
+  opacity: 1; }
+
+@keyframes moveInDown {
+  0% {
+    opacity: 1;
+    transform: translateY(-12rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -832,7 +826,7 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-5rem); }
+    transform: translateX(-10rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
