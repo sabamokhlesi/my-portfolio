@@ -26,7 +26,6 @@
 }
 .works-wrapper{
   position: relative;
-  // max-width: 1170px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -82,7 +81,7 @@ $cubic-slow: cubic-bezier(0.7, 0.01, 0.37, 1);
       position: absolute;
       top: 0;
       left: 0;
-      color: rgb(255, 255, 255);
+      color: $color-secondary-light;
       > span {
         overflow: hidden;
         transform: translateX(-100%);
@@ -115,6 +114,8 @@ $cubic-slow: cubic-bezier(0.7, 0.01, 0.37, 1);
   }
 }
 .card {
+  text-decoration: none;
+  color: inherit;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +128,6 @@ $cubic-slow: cubic-bezier(0.7, 0.01, 0.37, 1);
   background-size: cover;
   background-position: top;
   cursor: pointer;
-  // margin: 8rem 3rem 0 3rem;
   &-1,
   &-2{
     margin: 8rem 8rem 0 0rem;

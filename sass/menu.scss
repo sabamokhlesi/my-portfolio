@@ -16,41 +16,53 @@
             cursor: pointer;
             @media only screen and (max-width:$bp-large) {bottom: 2rem; left: 2rem;}
         }
-    &-icon{
+    &-link{
+        &-linkedin{
+            position: fixed;
+            bottom: 4rem;
+            left: 6.5rem;
+            z-index: 999;
+            transition: all .7s ease-out; 
+            @media only screen and (max-width:$bp-large) {left: 4rem; bottom: 2rem;}
+        }
+        &-github{
+            position: fixed;
+            bottom: 4rem;
+            left: 6.5rem;
+            z-index: 999;
+            transition: all .7s .1s ease-out;
+            @media only screen and (max-width:$bp-large) {left: 4rem; bottom: 2rem;}
+        }
     }
     &-img{
         background-color: black;
         cursor: pointer;
+    }
+    &-search{
         position: fixed;
         bottom: 4rem;
         left: 5rem;
         z-index: 999;
-        @media only screen and (max-width:$bp-large) {bottom: 2rem; left: 2.5rem;}
-    }
-    &-search{
         height: 5rem;
         width: 5rem;
         transition: all .9s ease-in;
         animation: pulse 1.5s infinite ease-in-out;
         border-radius: 10px 20px 0 0;
+        @media only screen and (max-width:$bp-large) {bottom: 2rem; left: 2.5rem;}
     }
     &-linkedin{
         transition: all .7s ease-out; 
         height: 1rem;
         width: 1rem;
-        left: 6.5rem;
         border-radius: 50%;
-        @media only screen and (max-width:$bp-large) {left: 4rem;}
     }
     &-github{
         transition: all .7s .1s ease-out;
         height: 1rem;
         width: 1rem;
-        left: 6.5rem;
         border-radius: 50%;
-        @media only screen and (max-width:$bp-large) {left: 4rem;}
      }
-    &-checkbox:checked ~ &-linkedin{
+    &-checkbox:checked ~ &-link-linkedin{
         transform: translateY(-10rem) rotate(720deg) scale(5);
         filter: brightness(1.5); 
     }
@@ -59,7 +71,7 @@
         filter: brightness(2);
         transform:rotate(1440deg);
     }
-    &-checkbox:checked ~ &-github{
+    &-checkbox:checked ~ &-link-github{
         transform: translateY(-17rem) rotate(1080deg) scale(5);
         filter: brightness(1.5);  
     }
