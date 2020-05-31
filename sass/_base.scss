@@ -92,7 +92,7 @@ height: 100%;
     text-decoration: none;
     &-primary{
         background-image: linear-gradient(135deg, transparent 0%, transparent 50%,white 50%);
-        background-size: 520%;
+        background-size: 565%;
         padding: 1rem 1.5rem;
         border: 1px solid currentColor;
         border-radius: 5px;
@@ -152,7 +152,7 @@ height: 100%;
     max-width: 100%;
     max-height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: black;
     z-index: 3500;
@@ -196,12 +196,8 @@ height: 100%;
     0% {
         transform: scaleY(0.5);
     }
-
-
-
     25% {
         transform: scaleY(1) translateY(-70px);
-
     }
 
     98% {
