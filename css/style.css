@@ -666,8 +666,9 @@ body {
 
 .code-line {
   padding-left: 4%;
-  margin-left: 1%;
-  font-family: "Roboto Mono", monospace; }
+  margin-left: 2%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem; }
   .code-line-0 {
     font-size: 2.5rem; }
   @media only screen and (max-width: 40em) {
