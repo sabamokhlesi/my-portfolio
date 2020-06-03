@@ -18,6 +18,10 @@
         padding-top: 8rem;
         height: max-content;
     }
+    &-title{
+        display: none;
+        @media only screen and (max-width:$bp-large) {display: block;}
+    }
     &-wrapper{
         flex: 1;
         padding: 3rem;

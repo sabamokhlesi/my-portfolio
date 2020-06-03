@@ -376,7 +376,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  max-width: 30%;
+  max-width: 28%;
   width: 100%;
   height: 19rem;
   padding: 2rem;
@@ -554,7 +554,7 @@ body {
 
 .contact-heading {
   grid-column: 4/5;
-  font-size: 14rem;
+  font-size: 13rem;
   line-height: 100%;
   font-family: "Righteous", cursive; }
   .contact-heading-1 {
@@ -641,6 +641,12 @@ body {
   margin-right: 3rem;
   padding-top: 8rem;
   height: max-content; }
+
+.code-title {
+  display: none; }
+  @media only screen and (max-width: 56.5em) {
+    .code-title {
+      display: block; } }
 
 .code-wrapper {
   flex: 1;
