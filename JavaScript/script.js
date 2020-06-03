@@ -6,7 +6,7 @@ const FadeIn = document.querySelectorAll('.fade-in')
 const options = {
     root:null,
     threshold:0,
-    rootMargin:"-150px -100px -150px -100px",
+    rootMargin:"-150px -100px -100px -100px",
 }
 const observer = new IntersectionObserver(function(entries,observer){
     entries.forEach(entry =>{
