@@ -554,7 +554,7 @@ body {
 
 .contact-heading {
   grid-column: 4/5;
-  font-size: 17rem;
+  font-size: 14rem;
   line-height: 100%;
   font-family: "Righteous", cursive; }
   .contact-heading-1 {
@@ -638,13 +638,15 @@ body {
 
 .code-links {
   writing-mode: vertical-lr;
-  margin-right: 4rem;
+  margin-right: 3rem;
   padding-top: 8rem;
   height: max-content; }
 
 .code-wrapper {
   flex: 1;
   padding: 3rem;
+  padding-right: 2rem;
+  padding-left: 1rem;
   margin-top: 5%; }
   @media only screen and (max-width: 40em) {
     .code-wrapper {
@@ -658,7 +660,7 @@ body {
 
 .code-line {
   padding-left: 4%;
-  margin-left: 5%;
+  margin-left: 1%;
   font-family: "Roboto Mono", monospace; }
   .code-line-0 {
     font-size: 2.5rem; }
