@@ -12,8 +12,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 18%;
-        @media only screen and (max-width:$bp-medium) {margin-left: 7%; h1{line-height: 130%;}}
+        margin-left: 15%;
+        h1{line-height: 130%;}
+        @media only screen and (max-width:$bp-medium) {margin-left: 7%;}
         @media only screen and (max-width:$bp-small) {
             h1{font-size: 7rem; line-height: 150%;}
         }
@@ -58,7 +59,7 @@
     &-links{
         margin-top: 3rem;
         align-self: start;
-        margin-left: 18%;
+        margin-left: 15%;
         @media only screen and (max-width:$bp-medium) {margin-left: 7%;}
         @media only screen and (max-width:$bp-small) {span{display: none;}}
     }

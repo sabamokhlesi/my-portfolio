@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth; }
   @media only screen and (max-width: 63em) {
     html {
-      font-size: 55%; } }
+      font-size: 53%; } }
   @media only screen and (max-width: 56.5em) {
     html {
       font-size: 50%; } }
@@ -198,12 +198,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 18%; }
+    margin-left: 15%; }
+    .header-text h1 {
+      line-height: 130%; }
     @media only screen and (max-width: 40em) {
       .header-text {
-        margin-left: 7%; }
-        .header-text h1 {
-          line-height: 130%; } }
+        margin-left: 7%; } }
     @media only screen and (max-width: 30em) {
       .header-text h1 {
         font-size: 7rem;
@@ -243,7 +243,7 @@ body {
   .header-links {
     margin-top: 3rem;
     align-self: start;
-    margin-left: 18%; }
+    margin-left: 15%; }
     @media only screen and (max-width: 40em) {
       .header-links {
         margin-left: 7%; } }
@@ -735,8 +735,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, rgba(245, 222, 179, 0.795), transparent);
+  background-image: linear-gradient(to bottom, rgba(245, 222, 179, 0.842), transparent);
   transition: all 1s; }
+  @media only screen and (max-width: 40em) {
+    .navigation-background {
+      background-image: linear-gradient(to bottom, rgba(245, 222, 179, 0.959), transparent); } }
 
 .navigation-nav {
   height: 0;

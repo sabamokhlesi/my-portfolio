@@ -18,7 +18,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-image:linear-gradient(to bottom,rgba(245, 222, 179, 0.795),transparent);
+        background-image:linear-gradient(to bottom,rgba(245, 222, 179, 0.842),transparent);
+        @media only screen and (max-width:$bp-medium) {background-image:linear-gradient(to bottom,rgba(245, 222, 179, 0.959),transparent);}
         transition: all 1s ;
     }
 
