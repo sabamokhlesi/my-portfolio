@@ -13,7 +13,7 @@
         flex-direction: column;
         justify-content: center;
         margin-left: 15%;
-        h1{line-height: 130%;}
+        h1{line-height: 130%; font-size: 9rem;}
         @media only screen and (max-width:$bp-medium) {margin-left: 7%;}
         @media only screen and (max-width:$bp-small) {
             h1{font-size: 7rem; line-height: 150%;}
@@ -24,7 +24,6 @@
             transition: all .1s;
             &:hover{
                 color: $color-primary;
-                font-size: 9.5rem;
                 line-height: 0;
                 @media only screen and (max-width:$bp-small) {font-size: 6.5rem;}
             }
@@ -33,7 +32,6 @@
             transition: all .1s;
             &:hover{
                 color: $color-secondary;
-                font-size: 9.5rem;
                 line-height: 0;
                 @media only screen and (max-width:$bp-small) {font-size: 6.5rem;}
             }
@@ -43,7 +41,6 @@
             transition: all .1s;
             &:hover{
                 color: $color-secondary;
-                font-size: 10.5rem;
                 line-height: 0;}
         }
         &-4{
@@ -51,7 +48,6 @@
             color: $color-secondary;
             &:hover{
                 color: $color-primary;
-                font-size: 9.5rem;
                 line-height: 0;
             }
         }
@@ -79,3 +75,4 @@
         font-size: 10rem;
     }
 }
+

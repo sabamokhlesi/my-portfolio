@@ -1,13 +1,13 @@
 {
-  "name": "Dream-Cafe",
+  "name": "My-Portfolio",
   "version": "1.0.0",
-  "description": "A fictional Cafe LANDING PAGE",
+  "description": "Saba Mokhlesi portfolio website",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server --browser=firefox"
+    "devserver": "live-server --browser=chrome"
   },
-  "author": "Jonas",
+  "author": "Saba",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.2.6",

@@ -25,7 +25,7 @@ FadeIn.forEach(item => observer.observe(item))
 textAnimate();
 function textAnimate(){
     const randomLetters = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
-    const content = "A Frontend Developer";
+    const content = "A Software Developer";
     const speed = 25; // ms per frame
     const increment = 3; // frames per step. Must be >2
     
@@ -377,3 +377,4 @@ maxTilt: 5
 $(window).on('load',function(){
     $('.loader-background').fadeOut("slow");
 });
+

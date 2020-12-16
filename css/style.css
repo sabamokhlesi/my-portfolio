@@ -200,7 +200,8 @@ body {
     justify-content: center;
     margin-left: 15%; }
     .header-text h1 {
-      line-height: 130%; }
+      line-height: 130%;
+      font-size: 9rem; }
     @media only screen and (max-width: 40em) {
       .header-text {
         margin-left: 7%; } }
@@ -212,7 +213,6 @@ body {
     transition: all .1s; }
     .header-letter-1:hover {
       color: #5918df;
-      font-size: 9.5rem;
       line-height: 0; }
       @media only screen and (max-width: 30em) {
         .header-letter-1:hover {
@@ -221,7 +221,6 @@ body {
     transition: all .1s; }
     .header-letter-2:hover {
       color: #c818df;
-      font-size: 9.5rem;
       line-height: 0; }
       @media only screen and (max-width: 30em) {
         .header-letter-2:hover {
@@ -231,14 +230,12 @@ body {
     transition: all .1s; }
     .header-letter-3:hover {
       color: #c818df;
-      font-size: 10.5rem;
       line-height: 0; }
   .header-letter-4 {
     transition: all .1s;
     color: #c818df; }
     .header-letter-4:hover {
       color: #5918df;
-      font-size: 9.5rem;
       line-height: 0; }
   .header-links {
     margin-top: 3rem;
@@ -293,16 +290,30 @@ body {
 .works-box {
   flex: 1;
   padding: 3rem;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .works-wrapper {
   position: relative;
   width: 100%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  height: 67vh;
+  overflow-y: scroll; }
+  .works-wrapper::-webkit-scrollbar {
+    width: 3px; }
+  .works-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 1rem; }
+  .works-wrapper::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1rem; }
+  .works-wrapper:hover::-webkit-scrollbar-thumb {
+    background: gainsboro; }
 
 .roll-up {
   overflow: hidden;
