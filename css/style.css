@@ -405,6 +405,12 @@ body {
     @media only screen and (max-width: 40em) {
       .card-3, .card-4 {
         margin: 5rem 4rem 0 0rem; } }
+  .card-single-left {
+    margin-right: auto;
+    margin-left: 18rem; }
+    @media only screen and (max-width: 40em) {
+      .card-single-left {
+        margin: 5rem 4rem 0 0rem; } }
   @media only screen and (max-width: 40em) {
     .card {
       max-width: 60%;
