@@ -7,14 +7,14 @@
 
 html {
   box-sizing: border-box;
-  font-size: 55%;
+  font-size: 52%;
   scroll-behavior: smooth; }
   @media only screen and (max-width: 63em) {
     html {
-      font-size: 53%; } }
+      font-size: 49%; } }
   @media only screen and (max-width: 56.5em) {
     html {
-      font-size: 50%; } }
+      font-size: 46%; } }
 
 body {
   font-family: "Jost", sans-serif;
